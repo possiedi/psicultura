@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arraçoamento</title>
+  <link rel="preload" href="../css/style.min.css" as="style">
+  <link rel="stylesheet" href="../css/style.min.css">
+</head>
+
+<body>
+
+  <a href="../index.html" id="btn-home">Home</a>
+
+  <h1>Arraçoamento</h1>
+
+  <div class="container">
+    <form id="form">
+      <div>
+        <label for="peso">Peso dos peixes (em gramas)</label>
+        <input type="number" name="peso" id="peso" placeholder="Peso">
+      </div>
+      <div>
+        <label for="quantidade">Quantidade de peixes</label>
+        <input type="number" name="quantidade" id="quantidade" placeholder="Quantidade">
+      </div>
+      <div>
+        <label for="temperatura">Temperatura da água</label>
+        <input type="number" name="temperatura" id="temperatura" placeholder="Temperatura">
+      </div>
+      <button id="btn-calculate">Calcular</button>
+      <span id="res"></span>
+      <span id="res2"></span>
+      <span id="res3"></span>
+    </form>
+  </div>
+
+  <script src="./script.min.js"></script>
+</body>
+
+</html>

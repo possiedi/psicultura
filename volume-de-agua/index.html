@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volume de água</title>
+  <link rel="preload" href="../css/style.css" as="style">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <a href="../index.html" id="btn-home">Home</a>
+
+  <h1>Volume de água</h1>
+
+  <div class="container">
+    <form id="form">
+      <div>
+        <label for="horas">Horas</label>
+        <input type="number" name="horas" id="horas" placeholder="Horas">
+      </div>
+      <div>
+        <label for="milimetros">Milimetros</label>
+        <input type="number" name="milimetros" id="milimetros" placeholder="Milimetros">
+      </div>
+      <div>
+        <label for="metros-quadrados">Metros quadrados</label>
+        <input type="number" name="metros-quadrados" id="metros-quadrados" placeholder="Metros quadrados">
+      </div>
+      <button id="btn-calculate">Calcular</button>
+      <span id="res"></span>
+    </form>
+  </div>
+
+  <script src="./script.min.js"></script>
+</body>
+
+</html>

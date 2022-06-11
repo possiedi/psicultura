@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alteração de pH</title>
+  <link rel="preload" href="../css/style.css" as="style">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <a href="../index.html" id="btn-home">Home</a>
+
+  <h1>Alteração de pH</h1>
+
+  <div class="container">
+    <form id="form">
+      <div>
+        <label for="ph1">pH Atual</label>
+        <input type="number" name="ph1" id="ph1" placeholder="ph1">
+      </div>
+      <div>
+        <label for="ph2">pH Desejado</label>
+        <input type="number" name="ph2" id="ph2" placeholder="ph2">
+      </div>
+      <div>
+        <label for="metros-cubicos">Metros cúbicos</label>
+        <input type="number" name="metros-cubicos" id="metros-cubicos" placeholder="Metros cúbicos">
+      </div>
+      <button id="btn-calculate">Calcular</button>
+      <span id="res"></span>
+    </form>
+  </div>
+
+  <script src="./script.min.js"></script>
+</body>
+
+</html>
