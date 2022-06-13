@@ -92,9 +92,9 @@ function calculate(event) {
   const $78mm = 'Granulometria da ração: 7mm a 8mm';
 
   // Vezes ao dia
-  const alimentacao = 'Quantidade de alimentação diária: '
+  const alimentacao = 'Quantidade de alimentação diária: ';
   const vezes12 = alimentacao + '12 vezes de ';
-  const vezes10 = alimentacao +'10 vezes de ';
+  const vezes10 = alimentacao + '10 vezes de ';
   const vezes9 = alimentacao + '9 vezes de ';
   const vezes8 = alimentacao + '8 vezes de ';
   const vezes7 = alimentacao + '7 vezes de ';
@@ -283,7 +283,7 @@ function calculate(event) {
   const racao$2531$29$30$04 = ((pesoQ3 * 0.8) / 3).toFixed(2);
   const racao$2531$31$32$04 = ((pesoQ3 * 0.6) / 3).toFixed(2);
 
-  // Ração 580.1g a 859g (2% - 3 vezes)
+  // Ração 580.1g a 1162g (2% - 3 vezes)
   const racao$5801$15$18 = (pesoQ2 * 0.4).toFixed(2);
   const racao$5801$19$21 = (pesoQ2 * 0.6).toFixed(2);
   const racao$5801$22$24 = (pesoQ2 * 0.8).toFixed(2);
@@ -297,21 +297,6 @@ function calculate(event) {
   const racao$5801$25$28$04 = (pesoQ2 / 3).toFixed(2);
   const racao$5801$29$30$04 = ((pesoQ2 * 0.8) / 3).toFixed(2);
   const racao$5801$31$32$04 = ((pesoQ2 * 0.6) / 3).toFixed(2);
-
-  // Ração 859.1g a 1162g (1% - 3 vezes)
-  const racao$8591$15$18 = (pesoQ1 * 0.4).toFixed(2);
-  const racao$8591$19$21 = (pesoQ1 * 0.6).toFixed(2);
-  const racao$8591$22$24 = (pesoQ1 * 0.8).toFixed(2);
-  const racao$8591$25$28 = pesoQ1.toFixed(2);
-  const racao$8591$29$30 = (pesoQ1 * 0.8).toFixed(2);
-  const racao$8591$31$32 = (pesoQ1 * 0.6).toFixed(2);
-
-  const racao$8591$15$18$04 = ((pesoQ1 * 0.4) / 3).toFixed(2);
-  const racao$8591$19$21$04 = ((pesoQ1 * 0.6) / 3).toFixed(2);
-  const racao$8591$22$24$04 = ((pesoQ1 * 0.8) / 3).toFixed(2);
-  const racao$8591$25$28$04 = (pesoQ1 / 3).toFixed(2);
-  const racao$8591$29$30$04 = ((pesoQ1 * 0.8) / 3).toFixed(2);
-  const racao$8591$31$32$04 = ((pesoQ1 * 0.6) / 3).toFixed(2);
 
   if (peso$05$20) {
     if (temp$15$18) {
@@ -685,7 +670,13 @@ function calculate(event) {
     peso$6371$694 ||
     peso$6941$751 ||
     peso$7511$806 ||
-    peso$8061$859
+    peso$8061$859 ||
+    peso$8591$912 ||
+    peso$9121$962 ||
+    peso$9621$1012 ||
+    peso$10121$1062 ||
+    peso$10621$1112 ||
+    peso$11121$1162
   ) {
     if (temp$15$18) {
       res.innerText = `${racao$5801$15$18} kg`;
@@ -710,43 +701,6 @@ function calculate(event) {
     } else if (temp$31$32) {
       res.innerText = `${racao$5801$31$32} kg`;
       res2.innerText = `${vezes3} ${racao$5801$31$32$04} kg`;
-      res3.innerText = `${$78mm}`;
-    } else {
-      res.innerText = 'Por favor, colocar a temperatura entre 15 a 32 graus.';
-      res2.innerText = '';
-      res3.innerText = '';
-    }
-  } else if (
-    peso$8591$912 ||
-    peso$9121$962 ||
-    peso$9621$1012 ||
-    peso$10121$1062 ||
-    peso$10621$1112 ||
-    peso$11121$1162
-  ) {
-    if (temp$15$18) {
-      res.innerText = `${racao$8591$15$18} kg`;
-      res2.innerText = `${vezes3} ${racao$8591$15$18$04} kg`;
-      res3.innerText = `${$78mm}`;
-    } else if (temp$19$21) {
-      res.innerText = `${racao$8591$19$21} kg`;
-      res2.innerText = `${vezes3} ${racao$8591$19$21$04} kg`;
-      res3.innerText = `${$78mm}`;
-    } else if (temp$22$24) {
-      res.innerText = `${racao$8591$22$24} kg`;
-      res2.innerText = `${vezes3} ${racao$8591$22$24$04} kg`;
-      res3.innerText = `${$78mm}`;
-    } else if (temp$25$28) {
-      res.innerText = `${racao$8591$25$28} kg`;
-      res2.innerText = `${vezes3} ${racao$8591$25$28$04} kg`;
-      res3.innerText = `${$78mm}`;
-    } else if (temp$29$30) {
-      res.innerText = `${racao$8591$29$30} kg`;
-      res2.innerText = `${vezes3} ${racao$8591$29$30$04} kg`;
-      res3.innerText = `${$78mm}`;
-    } else if (temp$31$32) {
-      res.innerText = `${racao$8591$31$32} kg`;
-      res2.innerText = `${vezes3} ${racao$8591$31$32$04} kg`;
       res3.innerText = `${$78mm}`;
     } else {
       res.innerText = 'Por favor, colocar a temperatura entre 15 a 32 graus.';
